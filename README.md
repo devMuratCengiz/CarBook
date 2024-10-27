@@ -6,6 +6,7 @@ Bu proje Asp.Net ile geliştirilmiş bir araç kiralama sitesidir.
 ## Kullanılan Teknolojiler
 - ASP.NET
 - Web API
+- MVC
 - Onion Architecture
 - CQRS
 - Mediator
