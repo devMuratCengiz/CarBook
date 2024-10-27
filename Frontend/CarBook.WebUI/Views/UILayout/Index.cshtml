@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+    @await Component.InvokeAsync("_HeadUILayout")
+<body>
+
+    @await Component.InvokeAsync("_NavbarUILayout")
+    <!-- END nav -->
+    @await Component.InvokeAsync("_MainCoverUILayout")
+
+
+    @RenderBody()
+
+
+
+    @await Component.InvokeAsync("_FooterUILayout")
+
+
+   @await Component.InvokeAsync("_LoaderUILayout")
+
+
+    @await Component.InvokeAsync("_ScriptsUILayout")
+
+</body>
+</html>

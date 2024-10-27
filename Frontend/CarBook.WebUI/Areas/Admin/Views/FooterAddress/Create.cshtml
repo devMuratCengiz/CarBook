@@ -1,0 +1,41 @@
+﻿@model CreateFooterAddressDto
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="card-title">Adres Ekle</h4>
+
+
+        <form method="post">
+            <div class="form-group">
+
+
+
+                <label for="exampleInputEmail1">Adres</label>
+                <input type="text" class="form-control" asp-for="Address" placeholder="Adres">
+
+                <label for="exampleInputEmail1">Mail</label>
+                <input type="text" class="form-control" asp-for="Email" placeholder="Mail">
+
+                <label for="exampleInputEmail1">Telefon</label>
+                <input type="text" class="form-control" asp-for="Phone" placeholder="Telefon">
+
+                <label for="exampleInputEmail1">Açıklama</label>
+                <input type="text" class="form-control" asp-for="Description" placeholder="Açıklama">
+
+
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary waves-effect waves-light">Ekle</button>
+        </form>
+
+    </div> <!-- end card-body-->
+</div>
+
+

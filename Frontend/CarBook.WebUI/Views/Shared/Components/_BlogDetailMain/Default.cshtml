@@ -1,0 +1,22 @@
+﻿@model GetBlogByIdDto
+<div class="col-md-8 ftco-animate">
+    <img src="@Model.CoverImageUrl" style="width:600px;height:300px" />
+    <h2 class="mb-3">@Model.Title</h2>
+    <p>@Model.Description</p>
+    <p>
+        <img src="images/image_7.jpg" alt="" class="img-fluid">
+    </p>
+
+    
+    @await Component.InvokeAsync("_BlogDetailAuthorAbout",new {id=ViewBag.id})
+
+
+    <div class="pt-5 mt-5">
+        <h3 class="mb-5">Yorumlar</h3>
+
+        @await Component.InvokeAsync("_CommentListByBlog", new{id=ViewBag.id}) 
+        <!-- END comment-list -->
+        @await Component.InvokeAsync("_AddComment", new { id = ViewBag.id })
+    </div>
+
+</div> 

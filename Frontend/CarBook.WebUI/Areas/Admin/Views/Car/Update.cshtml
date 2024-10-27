@@ -1,0 +1,56 @@
+﻿@model UpdateCarDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="card-title">Araba Güncelle</h4>
+
+
+        <form method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label for="exampleInputEmail1">Marka</label>
+                <select class="form-control" asp-for="BrandId" asp-items="@ViewBag.brands">
+                    <option value=>Seçiniz</option>
+                </select>
+
+
+                <label for="exampleInputEmail1">Model</label>
+                <input type="text" class="form-control" asp-for="Model" placeholder="Model">
+
+                <label for="exampleInputEmail1">Resim</label>
+                <input type="text" class="form-control" asp-for="CoverImageUrl" placeholder="Resim Url">
+
+                <label for="exampleInputEmail1">Büyük Resim</label>
+                <input type="text" class="form-control" asp-for="BigImageUrl" placeholder="Büyük Resim Url">
+
+                <label for="exampleInputEmail1">Km</label>
+                <input type="text" class="form-control" asp-for="Km" placeholder="Km">
+
+                <label for="exampleInputEmail1">Vites</label>
+                <input type="text" class="form-control" asp-for="Transmission" placeholder="Vites">
+
+                <label for="exampleInputEmail1">Koltuk Sayısı</label>
+                <input type="text" class="form-control" asp-for="Seat" placeholder="Koltuk Sayısı">
+
+                <label for="exampleInputEmail1">Bagaj</label>
+                <input type="text" class="form-control" asp-for="Luggage" placeholder="Bagaj">
+
+                <label for="exampleInputEmail1">Yakıt Türü</label>
+                <input type="text" class="form-control" asp-for="Fuel" placeholder="Yakıt Türü">
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary waves-effect waves-light">Güncelle</button>
+        </form>
+
+    </div> <!-- end card-body-->
+</div>
+
+
+

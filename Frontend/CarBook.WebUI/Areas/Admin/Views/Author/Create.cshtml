@@ -1,0 +1,31 @@
+﻿@model CreateAuthorDto
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="card-title">Yazar Ekle</h4>
+
+        <form method="post">
+            <div class="form-group">
+
+                <label for="exampleInputEmail1">Adı</label>
+                <input type="text" class="form-control" asp-for="Name" placeholder="Adı">
+
+                <label for="exampleInputEmail1">Açıklama</label>
+                <input type="text" class="form-control" asp-for="Description" placeholder="Açıklama">
+
+                <label for="exampleInputEmail1">Resim Url</label>
+                <input type="text" class="form-control" asp-for="ImageUrl" placeholder="Resim Url">
+
+            </div>
+
+            <button type="submit" class="btn btn-primary waves-effect waves-light">Ekle</button>
+        </form>
+
+    </div> <!-- end card-body-->
+</div>
+

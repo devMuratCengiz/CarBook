@@ -1,0 +1,39 @@
+﻿@model CreateServiceDto
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="card-title">Hizmet Ekle</h4>
+
+
+        <form method="post">
+            <div class="form-group">
+
+
+
+                <label for="exampleInputEmail1">Başlık</label>
+                <input type="text" class="form-control" asp-for="Title" placeholder="Başlık">
+
+                <label for="exampleInputEmail1">Açıklama</label>
+                <input type="text" class="form-control" asp-for="Description" placeholder="Açıklama">
+
+                <label for="exampleInputEmail1">Icon Url</label>
+                <input type="text" class="form-control" asp-for="IconUrl" placeholder="Icon Url">
+
+
+
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary waves-effect waves-light">Ekle</button>
+        </form>
+
+    </div> <!-- end card-body-->
+</div>
+
+

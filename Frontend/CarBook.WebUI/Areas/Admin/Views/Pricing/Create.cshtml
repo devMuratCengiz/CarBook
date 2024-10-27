@@ -1,0 +1,30 @@
+﻿@model CreatePricingDto
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="card-title">Ödeme Ekle</h4>
+
+
+        <form method="post">
+            <div class="form-group">
+
+
+
+                <label for="exampleInputEmail1">Ad</label>
+                <input type="text" class="form-control" asp-for="Name" placeholder="Ödeme Adı">
+
+
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary waves-effect waves-light">Ekle</button>
+        </form>
+
+    </div> <!-- end card-body-->
+</div>

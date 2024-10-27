@@ -1,0 +1,40 @@
+﻿@model UpdateCommentDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="card-title">Yorum Güncelle</h4>
+
+
+        <form method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+
+
+
+                <label for="exampleInputEmail1">Ad</label>
+                <input type="text" class="form-control" asp-for="Name" placeholder="Adı">
+
+                <label for="exampleInputEmail1">Yorum</label>
+                <input type="text" class="form-control" asp-for="Content" placeholder="Yorum">
+
+                <label for="exampleInputEmail1">Oluşturulma Tarihi</label>
+                <input type="text" class="form-control" asp-for="CreatedDate" placeholder="Tarih">
+
+                <label for="exampleInputEmail1">Blog</label>
+                <input type="text" class="form-control" asp-for="BlogId" placeholder="Blog Id">
+
+
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary waves-effect waves-light">Güncelle</button>
+        </form>
+
+    </div> <!-- end card-body-->
+</div>
